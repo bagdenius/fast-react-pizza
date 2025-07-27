@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SearchOrder = () => {
   const [query, setQuery] = useState(``);
@@ -18,6 +18,7 @@ const SearchOrder = () => {
         placeholder="Search order number"
         value={query}
         onChange={(event) => setQuery(event.target.value)}
+        className="bg-white"
       />
     </form>
   );
